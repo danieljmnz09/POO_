@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ByFixed Store</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">ByGame</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tienda</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Biblioteca</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            🛒 Carrito <span id="cart-count" class="badge bg-success">0</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <header class="hero text-white text-center">
+
+        <div class="container">
+
+            <h1 class="display-4 fw-bold">Bienvenido a ByGame</h1>
+            <p class="lead">Descubre nuevos mundos y aventuras</p>
+
+        </div>
+
+    </header>
+
+    <section class="container my-5">
+
+        <h2 class="mb-4">🎮 Juegos destacados</h2>
+
+        <div class="row g-4">
+
+            <!-- Juego 1 -->
+            <div class="col-md-4">
+                <div class="card game-card">
+
+                    <img src="static/images/Galaxy_Raiders.png" class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Galaxy Raiders</h5>
+                        <p class="card-text">Explora galaxias y lucha contra piratas espaciales.</p>
+
+                        <button class="btn btn-buy w-100" onclick="buyGame('Galaxy Raiders')">
+                            Comprar $19
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 2 -->
+            <div class="col-md-4">
+                <div class="card game-card">
+
+                    <img src="static/images/Dragon_Kingdoms.png" class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Dragon Kingdoms</h5>
+                        <p class="card-text">Construye tu reino y domina dragones legendarios.</p>
+
+                        <button class="btn btn-buy w-100" onclick="buyGame('Dragon Kingdoms')">
+                            Comprar $25
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 3 -->
+            <div class="col-md-4">
+                <div class="card game-card">
+
+                    <img src="static/images/Cyber_Runner.jpg" class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Cyber Runner</h5>
+                        <p class="card-text">Corre por una ciudad futurista llena de misiones.</p>
+
+                        <button class="btn btn-buy w-100" onclick="buyGame('Cyber Runner')">
+                            Comprar $15
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 4 -->
+            <div class="col-md-4">
+                <div class="card game-card">
+
+                    <img src="static/images/SB.png" class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Space Battle</h5>
+                        <p class="card-text">Batallas espaciales multijugador llenas de acción.</p>
+
+                        <button class="btn btn-buy w-100" onclick="buyGame('Space Battle')">
+                            Comprar $18
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 5 -->
+            <div class="col-md-4">
+                <div class="card game-card">
+
+                    <img src="static/images/JS.png" class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Jungle Escape</h5>
+                        <p class="card-text">Escapa de una jungla llena de peligros y secretos.</p>
+
+                        <button class="btn btn-buy w-100" onclick="buyGame('Jungle Escape')">
+                            Comprar $12
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 6 -->
+            <div class="col-md-4">
+                <div class="card game-card">
+
+                    <img src="static/images/" class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Racing Pro</h5>
+                        <p class="card-text">Compite en carreras extremas alrededor del mundo.</p>
+
+                        <button class="btn btn-buy w-100" onclick="buyGame('Racing Pro')">
+                            Comprar $20
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 7 -->
+            <div class="col-md-4">
+                <div class="card game-card">
+
+                    <img src="static/images/" class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Zombie City</h5>
+                        <p class="card-text">Sobrevive a una invasión zombie en la ciudad.</p>
+
+                        <button class="btn btn-buy w-100" onclick="buyGame('Zombie City')">
+                            Comprar $17
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 8 -->
+            <div class="col-md-4">
+                <div class="card game-card">
+
+                    <img src="static/images/" class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Magic Legends</h5>
+                        <p class="card-text">Usa magia antigua para salvar el reino.</p>
+
+                        <button class="btn btn-buy w-100" onclick="buyGame('Magic Legends')">
+                            Comprar $22
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 9 -->
+            <div class="col-md-4">
+                <div class="card game-card">
+
+                    <img src="" class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">War Tactics</h5>
+                        <p class="card-text">Estrategia militar en batallas épicas.</p>
+
+                        <button class="btn btn-buy w-100" onclick="buyGame('War Tactics')">
+                            Comprar $21
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="bg-dark text-center text-white p-4">
+
+        <p>© 2026 ByFixed Studio</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
