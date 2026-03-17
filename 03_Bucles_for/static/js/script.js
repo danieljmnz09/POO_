@@ -94,3 +94,19 @@ function Stock() {
     resultado.textContent = `El artículo ${articuloBuscado} se encuentra ${vecesEncontrado} veces en la bodega`
     container.classList.remove('d-none')
 }
+
+function Generador() {
+    let temperaturas = [22, 24, 28, 35, 21, 38];
+    let temperaturasPeligrosas = [];
+
+    const container = document.getElementById('resultadoContainer8');
+    const result = document.getElementById('result8');
+
+    for (i = 0; i < temperaturas.length; i++) {
+        if (temperaturas[i] >= 30 && temperaturas[i] < 50) {
+            result.innerHTML +=
+                `< p class="text-danger"> ¡ALERTA! Temperatura críticade ${temperaturas[i]} grados.</p><br>;`
+        }
+        container.classList.remove(`d-none`);
+    }
+}
